@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samuyel's Portfolio</title>
+    <style>
+        /* Import Google Font */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: white;
+            text-align: center;
+        }
+
+        header {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 20px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            font-weight: 600;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            font-weight: 300;
+        }
+
+        section {
+            margin: 50px auto;
+            width: 80%;
+            max-width: 1000px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(10px);
+            transition: transform 0.3s;
+        }
+
+        section:hover {
+            transform: translateY(-5px);
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+
+        .grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .card {
+            width: 250px;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card img {
+            width: 100%;
+            height: 150px;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+
+        .card p {
+            margin-top: 10px;
+            font-size: 1.1rem;
+        }
+
+        #contact a {
+            color: #ffeb3b;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        footer {
+            margin-top: 30px;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.3);
+        }
+
+        footer p {
+            font-size: 1rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Samuyel</h1>
+        <p>AIML Student | Prompter | Editor</p>
+        <img src="/static/pic.jpg" alt="Samuyel's Profile" class="profile-pic">
+    </header>
+    
+    <style>
+       
+    header {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .profile-pic {
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        width: 90px;  /* Slightly increased size */
+        height: 90px;
+        border-radius: 50%;
+        border: 3px solid white;
+        object-fit: contain;  /* Changed from 'cover' to 'contain' */
+        padding: 3px; /* Creates a little space around the image */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
+    </style>
+    
+    
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hi, everyone! 👋 I'm <b>Samuyel</b>, a CSE (AI & ML) student with a passion for cutting-edge technology.  
+            I specialize in <b>AI prompting</b> and love exploring the world of artificial intelligence.  
+            Apart from coding, I am also a **creative editor**, blending technology with visual storytelling.</p>
+        
+            <p>🚀 I'm always eager to learn, build, and innovate. Whether it's **developing AI projects, crafting compelling content, or enhancing digital experiences**,  
+            I strive to make an impact with my skills. My journey is fueled by curiosity, creativity, and the drive to turn ideas into reality.</p>
+        
+    </section>
+    
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="grid">
+            <div class="card">
+                <img src="/static/168344-838892840_tiny.jpg" alt="Hand Sign Detection">
+                <p><strong>Hand Sign Detection</strong><br>AI-based project to detect and interpret hand signs.</p>
+            </div>
+            <div class="card">
+                <img src="/static/cp.jpeg "alt="Crop Prediction">
+                <p><strong>Crop Prediction</strong><br>AI-driven crop yield prediction system.</p>
+            </div>
+            <div class="card">
+                <img src="/static/pen.png" alt="Virtual Pen">
+                <p><strong>Virtual Pen</strong><br>Hand tracking project that enables writing using finger gestures.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="grid">
+            <div class="card">
+                <img src="/static/prompt-engineering.avif" alt="Prompting">
+                <p>Prompting</p>
+            </div>
+            <div class="card">
+                <img src="/static/HTML-CSS-Review.png" alt="HTML & CSS">
+                <p>HTML & CSS</p>
+            </div>
+            <div class="card">
+                <img src="/static/ed.jpg" alt="Editing">
+                <p>Editing</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="services">
+        <h2>My Services</h2>
+        <div class="grid">
+            <div class="card">
+                <img src="/static/eds.png" alt="Editing Service">
+                <p>Editing</p>
+            </div>
+            <div class="card">
+                <img src="/static/ppt.jpg" alt="PPT Maker">
+                <p>PPT Maker</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:dammusamuyel123@gmail.com">dammusamuyel123@gmail.com</a></p>
+        <div class="social-icons">
+            <a href="https://linkedin.com/in/your-profile" target="_blank">LinkedIn</a>
+            <a href="https://instagram.com/your-profile" target="_blank">Instagram</a>
+            <a href="https://github.com/your-profile" target="_blank">GitHub</a>
+        </div>
+    </section>
+    
+    <footer>
+        <p>Copy Right © 2025 by @Samuyel | All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
